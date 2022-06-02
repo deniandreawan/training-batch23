@@ -35,7 +35,7 @@ export async function getStaticPaths() {
   };
 }
 
-export const getServerSideProps = async (ctx) => {
+export const getStaticProps = async (ctx) => {
   const res = await fetch(
     "https://jsonplaceholder.typicode.com/users/" + ctx.params.id
   );
